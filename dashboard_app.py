@@ -1,5 +1,5 @@
 """
-EV Battery Degradation Dashboard — Industrial IoT Project
+EV Battery Degradation Dashboard
 ==========================================================
 Dataset  : ev_battery_degradation_v1.csv  (10,000 EV records)
 Framework: Plotly Dash
