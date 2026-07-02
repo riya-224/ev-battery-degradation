@@ -9,11 +9,8 @@ across a fleet of 10,000 vehicles using real sensor data.
 [EV Battery Degradation Dataset on Kaggle](https://www.kaggle.com/datasets/bertnardomariouskono/electric-vehicle-ev-battery-degradation-and-charge)  
 10,000 vehicles · NMC & LFP chemistries · 13 features · SoH as target variable
 
-## How to Run the Dashboard
-```bash
-pip install -r requirements.txt
-python dashboard_app.py
-# Open http://127.0.0.1:8050
+## 🔗 Live Demo
+https://ev-battery-degradation.onrender.com
 ```
 
 ## Analysis Notebook
