@@ -260,7 +260,7 @@ def fig_status_donut(dff):
         hovertemplate="%{label}: %{value:,} vehicles (%{percent})<extra></extra>",
     ))
     fig.update_layout(title="Fleet Battery Status",
-                      **BASE_LAYOUT)
+                  **{**BASE_LAYOUT, "legend": dict(orientation="h", y=-0.1)})
     return fig
 
 
