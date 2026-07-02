@@ -347,7 +347,7 @@ NO_BAR = {"displayModeBar": False}
 # ─────────────────────────────────────────────────────────────────────────────
 
 app = Dash(__name__, title="EV Battery Degradation Dashboard")
-
+server = app.server
 app.layout = html.Div(
     style={"fontFamily": "Arial, sans-serif",
            "background": "#eef1f5", "minHeight": "100vh"},
