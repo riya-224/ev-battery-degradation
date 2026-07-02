@@ -29,7 +29,7 @@ from dash import Dash, dcc, html, Input, Output, callback
 # ─────────────────────────────────────────────────────────────────────────────
 
 try:
-    df = pd.read_csv("dashboard_data.csv")
+    df = pd.read_csv("ev_battery_degradation_v1.csv")
     print(f"✅ Loaded {len(df):,} rows × {df.shape[1]} columns")
 except FileNotFoundError:
     print("\n❌  dashboard_data.csv not found.")
