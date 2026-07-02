@@ -260,8 +260,7 @@ def fig_status_donut(dff):
         hovertemplate="%{label}: %{value:,} vehicles (%{percent})<extra></extra>",
     ))
     fig.update_layout(title="Fleet Battery Status",
-                      legend=dict(orientation="h", y=-0.1),
-                      **BASE_LAYOUT)
+                  **{**BASE_LAYOUT, "legend": dict(orientation="h", y=-0.1)})
     return fig
 
 
@@ -348,7 +347,7 @@ NO_BAR = {"displayModeBar": False}
 # ─────────────────────────────────────────────────────────────────────────────
 
 app = Dash(__name__, title="EV Battery Degradation Dashboard")
-
+server = app.server
 app.layout = html.Div(
     style={"fontFamily": "Arial, sans-serif",
            "background": "#eef1f5", "minHeight": "100vh"},
